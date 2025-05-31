@@ -36,7 +36,7 @@ This project demonstrates how I implemented Prometheus & Grafana Dashboard using
 3. **Created a kind cluster with 2 Worker Node**  
     ### Node creation:
     ```bash
-    kubectl apply -f config.yml
+    kubectl apply -f config.yaml
     ```
 
 4. **Helm Install**  
