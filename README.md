@@ -68,36 +68,17 @@ This project demonstrates how I implemented Prometheus & Grafana Dashboard using
     kubectl get namespace
     ```
 
+6. ** Forwording the port of Prometheus **
 
+    ```bash 
+    kubectl port-forward svc/kind-prometheus-kube-prome-prometheus -n monitoring 9090:9090 --address=0.0.0.0
+    ```
 
----
+7. ** ** Forwording the port of Grafana **
 
-## 🧠 Notes
-
-- On macOS (Docker driver), direct access via `NodePort` (like `http://192.168.x.x:<port>`) doesn't work.
-- Instead, I used:
-```bash
-  minikube service django-svc 
-```
-
-
-
-## 🔧 Commands Summary
-
-### Docker
-
-```bash
-docker build -t movie_app .
-docker tag movie_app itssymonbarua640/movie_app
-docker push itssymonbarua640/movie_app
-```
-
-### Kubernetes
-``` bash
-kubectl apply -f runpod.yml
-kubectl expose pod movie-pod --name=django-svc --type=NodePort --port=8000 --target-port=8000
-minikube service django-svc
-```
+    ```bash 
+    kubectl port-forward svc/kind-prometheus-grafana -n monitoring 3000:80 --address=0.0.0.0
+    ```
 
 
 ## Author 
