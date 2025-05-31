@@ -74,7 +74,7 @@ This project demonstrates how I implemented Prometheus & Grafana Dashboard using
     kubectl port-forward svc/kind-prometheus-kube-prome-prometheus -n monitoring 9090:9090 --address=0.0.0.0
     ```
 
-7. ** ** Forwording the port of Grafana **
+7. ** Forwording the port of Grafana **
 
     ```bash 
     kubectl port-forward svc/kind-prometheus-grafana -n monitoring 3000:80 --address=0.0.0.0
