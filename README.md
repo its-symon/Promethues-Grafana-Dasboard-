@@ -80,6 +80,10 @@ This project demonstrates how I implemented Prometheus & Grafana Dashboard using
     kubectl port-forward svc/kind-prometheus-grafana -n monitoring 3000:80 --address=0.0.0.0
     ```
 
+## Demo ##
+
+
+🎥 [Click here to view the demo](https://drive.google.com/file/d/1S2KeLMxp8uePqu8EHbCvmIGPTVUd_YbF/view?usp=sharing)
 
 ## Author 
 Symon
